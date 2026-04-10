@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/burger.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="icon" type="image/png" href="img/fav.png">
+  <title>Emergency Site</title>
+</head>
+
+<body id="register">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"> LOGO-TYPE </a>
+      </div>
+      <ul class="menu">
+        <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
+        <li><a class="menuItem" href="register.html">Indberet</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>VIL DU BLIVE HJERTE LØBER </h1>
+    <section id="form-section">
+
+      <h2>Tilmeld dig her</h2>
+      <form aria-label="Sign up form">
+        <div class="form-group">
+          <label for="fist_name">First name <span class="required">*</span></label>
+          <input aria-describedby="first_name-error" type="text" id="first_name" name="first_name" required />
+          <p class="error-message"> Please enter a value</p>
+        </div>
+
+        <div class="form-group">
+          <label for="last-name">Last name <span class="required">*</span></label>
+          <input type="text" id="last_name" name="last_name">
+          <p class="error-message"> Please enter a value</p>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email <span class="required">*</span></label>
+          <!-- <input type="email" id="email" name="email"> -->
+          <input aria-describedby="email-error" type="email" id="email" name="email" required />
+          <p class="error-message" id="accept_terms-error">Please enter a value </p>
+        </div>
+
+        <div class="form-group">
+          <label for="terms"></label>
+          <input type="checkbox" id="terms" name="accept_terms" value="yes">
+          Accept terms
+          <p class="error-message" id="accept_terms-error">Accept terms</p>
+        </div>
+
+        <button class="bnt">Sign in</button>
+
+
+        <article id="form-info">
+          <h2>Overskrift</h2>
+          <p>Tekst</p>
+        </article>
+      </form>
+
+      <form id="webform">
+        <h2></h2>
+    </section>
+    <section id="form-summary">
+      <h2>Summary</h2>
+      <article>
+
+        <div>
+          <p>First name: <span id="first_output"></span></p>
+          <p>Last name: <span id="last_output"></span></p>
+          <p>Email: <span id="email_output"></span></p>
+          <p>Terms accepted: <span id="terms_output"></span></p>
+        </div>
+
+        <p class="placeholder">Opsummering</p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#">link</a></li>
+        <li><a href="#">link</a></li>
+        <li><a href="#">link</a></li>
+        <li><a href="#">link</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">link</a></li>
+        <li><a href="#">link</a></li>
+        <li><a href="#">link</a></li>
+        <li><a href="#">link</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">link</a></li>
+        <li><a href="#">link</a></li>
+        <li><a href="#">link</a></li>
+        <li><a href="#">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="js/form.js"></script>
+</body>
+
+</html>
