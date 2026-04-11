@@ -42,37 +42,36 @@
         <div class="form-group">
           <label for="fist_name">First name <span class="required">*</span></label>
           <input aria-describedby="first_name-error" type="text" id="first_name" name="first_name" required />
-          <p class="error-message"> Please enter a value</p>
+          <p class="error-message" id="first-name-error"> Please enter a value</p>
         </div>
 
         <div class="form-group">
           <label for="last-name">Last name <span class="required">*</span></label>
-          <input type="text" id="last_name" name="last_name">
-          <p class="error-message"> Please enter a value</p>
+          <input aria-describedby="last_name-error" type="text" id="last_name" name="last_name">
+          <p class="error-message" id="last_name-error"> Please enter a value</p>
         </div>
 
         <div class="form-group">
           <label for="email">Email <span class="required">*</span></label>
-          <!-- <input type="email" id="email" name="email"> -->
           <input aria-describedby="email-error" type="email" id="email" name="email" required />
-          <p class="error-message" id="accept_terms-error">Please enter a value </p>
+          <p class="error-message" id="email-error">Please enter a value </p>
         </div>
 
         <div class="form-group">
           <label for="terms"></label>
-          <input type="checkbox" id="terms" name="accept_terms" value="yes">
+          <input aria-describedby="terma-error" type="checkbox" id="terms" name="accept_terms" value="yes">
           Accept terms
           <p class="error-message" id="accept_terms-error">Accept terms</p>
         </div>
-
-        <button class="bnt">Sign in</button>
-
-
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
       </form>
+      <button class="bnt">Sign in</button>
+
+
+      <article id="form-info">
+        <h2>Overskrift</h2>
+        <p>Tekst</p>
+      </article>
+
 
       <form id="webform">
         <h2></h2>
