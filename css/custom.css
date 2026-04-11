@@ -31,7 +31,8 @@
   --font-sub1-size: 1rem;
 
   /* Headlines (color) */
-  --color-headline-bg: #4b4545;
+  --color-headline-bg: #a61b29;
+  /* original farve #4b4545 */
 
   /* Tekst */
   --color-text: #000;
@@ -60,5 +61,5 @@
   --font-weight-light: 200;
 
   /* Infographics background colors*/
-  --color-info-bg: #676161;
+  --color-info-bg: #cdccc4;
 }
