@@ -43,8 +43,8 @@
 
 /* Infografikens, design */
 
-#førstehjælpskasse:hover,
+#førstehjælpskasse,
 #hjerte,
-#hjertestarter {
+#hjertestarter :hover {
   cursor: pointer;
 }
