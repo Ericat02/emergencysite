@@ -5,8 +5,7 @@
 
   /* Header background color */
   --color-head-bg: #a61b29;
-
-  /* orginal farve #625e5c */
+  /* orginal header farve #625e5c */
 
   /* Logotype */
   --color-logotype-bg: #2a2828;
@@ -14,7 +13,9 @@
   --font-logotype-size: 1rem;
 
   /* Global menu */
-  --color-menu-bg: #5a5b5e;
+  --color-menu-bg: #c1bfb8;
+  /* orginal menu farve #5a5b5e */
+
   /* Links */
   --color-link-bg: #78766e;
   --color-link-hover: #fff;
