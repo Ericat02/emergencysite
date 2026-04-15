@@ -23,7 +23,8 @@ function infoKasse() {
     "Køber du en førstehjælpskasse fra Falck, får du en førstehjælpskasse som indeholder det mest vigtig og nødvendige";
   document.querySelector("#efficiency").innerHTML =
     "<h3>Førstehjælpskassens indhold </h3><ul><li>Kompresforbindinger</li><li>Gazebind</li><li> plaster</li><li> Kølende gelé samt kølepose (gel til brandsår)</li><li> Støttebind (elastisk forbinding)</li><li> Servietter til sårrens</li><li>Saks, pincet og rulletape</li></ul>";
-  document.querySelector("#requirement").innerHTML = "";
+  document.querySelector("#requirement").innerHTML =
+    "Når du køber din førstehjælps kasse hos falck, får du adgang til fri genopfyldning hvilket vil sige, at når du løber tør, skal du blot går ind på falcks hjemmeside under genopfyld her her udfylder du dit kundenummer, og vælger hvad du er løbet tør for. Du vil dernæst få tilsendt dit manglene udstyr.";
 }
 
 function infoHjertestarter() {
