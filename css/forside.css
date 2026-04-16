@@ -21,6 +21,19 @@
   padding: 1rem;
 }
 
+#side_links {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: var(--color-link-active);
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+#art-news-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
 /* popover */
 [popover] {
   padding: 1rem;
