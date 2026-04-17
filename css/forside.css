@@ -1,3 +1,9 @@
+/* Logo */
+.logo {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 #top-section {
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -28,10 +34,54 @@
   border-radius: 1rem;
   margin: 1rem;
 }
+.front-page-text {
+  display: grid;
+  gap: 0.3rem;
+  grid-template-rows: auto auto 1fr;
+  margin-top: 10px;
+}
 
 #art-news-wrapper {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 5fr 2fr;
+}
+/* artikel sektion */
+.news {
+  background-color: var(--color-cta-card-bg-inverted);
+  display: grid;
+  margin: 1rem;
+  gap: 2rem;
+  p {
+    padding: 1rem;
+  }
+}
+/* knap design */
+.knap-til-sider,
+.news button {
+  border-radius: var(--border-radius-links);
+  height: max-content;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+}
+
+.knap-til-sider {
+  background-color: red;
+  color: black;
+  border:
+    0.2rem solid,
+    black;
+  border-radius: 2rem;
+  gap: 2px;
+}
+
+.knap-til-sider::after {
+  content: " →";
+  margin-left: 18px;
+}
+
+button {
+  margin-left: 6rem;
+  border-radius: 2rem;
 }
 
 /* popover */
