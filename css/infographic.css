@@ -41,8 +41,10 @@
   background-color: var(--color-card-bg-inverted);
 }
 
-#førstehjælpskasse:hover,
+/* Infografikens, design */
+
+#førstehjælpskasse,
 #hjerte,
-#hjertestarter {
+#hjertestarter :hover {
   cursor: pointer;
 }

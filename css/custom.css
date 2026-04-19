@@ -5,8 +5,7 @@
 
   /* Header background color */
   --color-head-bg: #a61b29;
-
-  /* orginal farve #625e5c */
+  /* orginal header farve #625e5c */
 
   /* Logotype */
   --color-logotype-bg: #2a2828;
@@ -14,7 +13,9 @@
   --font-logotype-size: 1rem;
 
   /* Global menu */
-  --color-menu-bg: #5a5b5e;
+  --color-menu-bg: #c1bfb8;
+  /* orginal menu farve #5a5b5e */
+
   /* Links */
   --color-link-bg: #78766e;
   --color-link-hover: #fff;
@@ -31,7 +32,8 @@
   --font-sub1-size: 1rem;
 
   /* Headlines (color) */
-  --color-headline-bg: #4b4545;
+  --color-headline-bg: #a61b29;
+  /* original farve #4b4545 */
 
   /* Tekst */
   --color-text: #000;
@@ -60,5 +62,5 @@
   --font-weight-light: 200;
 
   /* Infographics background colors*/
-  --color-info-bg: #676161;
+  --color-info-bg: #cdccc4;
 }

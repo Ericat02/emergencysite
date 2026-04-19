@@ -1,0 +1,221 @@
+/* Logo */
+.logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Overskrifternes design */
+.overskrift {
+  background-color: var(--color-card-bg-inverted);
+  height: 2rem;
+}
+
+#top-section {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem auto;
+}
+
+#top-section-wrapper {
+  background-color: var(--color-head-bg);
+  p {
+    color: var(--color-text-inverted);
+  }
+}
+
+#frontpage article {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: var(--color-info-bg);
+  border-radius: var(--border-radius-links);
+  padding: 1rem;
+}
+
+#side_links {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: var(--color-link-active);
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.front-page-text {
+  display: grid;
+  gap: 0.3rem;
+  grid-template-rows: auto auto 1fr;
+  margin-top: 10px;
+  max-width: 50ch;
+}
+
+#art-news-wrapper {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+}
+/* artikel sektion */
+
+.news_card1,
+.news_card2 {
+  /* border: 1rem solid black; */
+}
+
+/* .news article:first-child::before {
+  content: "BREAKING NEWS";
+  background-color: black;
+  padding: 0.5rem 0 0.3rem 0;
+  color: var(--color-text-inverted);
+  margin-top: 0.4rem;
+  text-align: center;
+} */
+
+.breaking {
+  display: grid;
+  grid-column: 1/ -1;
+  background-color: #000;
+  text-align: center;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.news {
+  background-color: var(--color-cta-card-bg-inverted);
+  display: grid;
+  margin: 1rem;
+  gap: 2rem;
+  p {
+    padding: 1rem;
+  }
+}
+/* knap design */
+.knap-til-sider,
+.news button {
+  border-radius: var(--border-radius-links);
+  height: max-content;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+}
+
+.knap-til-sider {
+  background-color: red;
+  color: black;
+  border:
+    0.2rem solid,
+    black;
+  border-radius: 2rem;
+  gap: 2px;
+}
+
+.knap-til-sider::after {
+  content: " →";
+  margin-left: 20px;
+}
+
+button {
+  margin-left: 6rem;
+  border-radius: 2rem;
+}
+
+/* popover */
+[popover] {
+  padding: 1rem;
+
+  max-height: 90vh;
+  max-width: 90vw;
+  width: 50ch;
+}
+
+[popover] button {
+  position: sticky;
+  top: 0;
+  justify-self: end;
+}
+
+:popover-open {
+  display: grid;
+  align-self: center;
+}
+
+::backdrop {
+  background: #0001;
+}
+
+[popover] {
+  opacity: 0;
+  transition: 1s allow-discrete;
+}
+
+:popover-open {
+  opacity: 1;
+}
+
+@starting-style {
+  :popover-open {
+    opacity: 0;
+  }
+}
+
+::backdrop {
+  opacity: 0;
+  transition: 1s allow-discrete;
+}
+
+:popover-open::backdrop {
+  opacity: 1;
+}
+
+@starting-style {
+  :popover-open::backdrop {
+    opacity: 0;
+  }
+}
+
+/* accordion design */
+details {
+  outline: 2px solid #000;
+}
+
+summary {
+  background: red;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.content p {
+  margin: 0;
+}
+
+summary::marker {
+  content: none;
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+summary::after {
+  content: "+";
+}
+
+[open] summary::after {
+  content: "-";
+}
+
+html {
+  interpolate-size: allow-keywords;
+}
+
+::details-content {
+  height: 0;
+  transition: 0.5s allow-discrete;
+  overflow: clip;
+}
+
+[open]::details-content {
+  height: auto;
+}
