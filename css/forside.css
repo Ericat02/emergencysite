@@ -4,6 +4,12 @@
   grid-template-columns: 1fr 1fr;
 }
 
+/* Overskrifternes design */
+.overskrift {
+  background-color: var(--color-card-bg-inverted);
+  height: 2rem;
+}
+
 #top-section {
   display: grid;
   grid-template-columns: 1fr 5fr;
