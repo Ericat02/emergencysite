@@ -8,6 +8,7 @@
 .overskrift {
   background-color: var(--color-card-bg-inverted);
   height: 2rem;
+  text-align: center;
 }
 
 #top-section {
@@ -82,9 +83,6 @@
   display: grid;
   margin: 1rem;
   gap: 2rem;
-  p {
-    padding: 1rem;
-  }
 }
 /* knap design */
 .knap-til-sider,
@@ -118,7 +116,6 @@ button {
 /* popover */
 [popover] {
   padding: 1rem;
-
   max-height: 90vh;
   max-width: 90vw;
   width: 50ch;
@@ -170,8 +167,10 @@ button {
 }
 
 /* accordion design */
+
 details {
   outline: 2px solid #000;
+  margin-bottom: 10px;
 }
 
 summary {
@@ -219,3 +218,44 @@ html {
 [open]::details-content {
   height: auto;
 }
+
+/* dark mode */
+
+/* html eller :root { */
+/* color-scheme: light dark;
+  --color-brand: light-dark(#5000ca, #bb86fc);
+  --bg-primary: light-dark(#eee, #121212);
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+#theme-toggle {
+  --h: 2rem;
+  --w: 3rem;
+  font: inherit;
+  appearance: none;
+  background: gainsboro;
+  height: var(--h);
+  width: var(--w);
+  border: 1px solid #000;
+  cursor: pointer;
+  border-radius: 9999px;
+}
+
+#theme-toggle::before {
+  content: "";
+  display: block;
+  padding: 3px;
+  height: 100%;
+  aspect-ratio: 1;
+  background: gray content-box;
+  border-radius: inherit;
+  transition: 0.3s;
+}
+
+#theme-toggle:checked::before {
+  background-color: green;
+  translate: calc(var(--w) - var(--h));
+} */

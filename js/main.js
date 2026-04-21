@@ -1,3 +1,4 @@
+// Infografik
 document.querySelector("#hjerte").addEventListener("click", infoHjerte);
 document
   .querySelector("#førstehjælpskasse")
@@ -37,3 +38,24 @@ function infoHjertestarter() {
   document.querySelector("#requirement").innerHTML =
     "Se videoen her som viser step by step hvordan du bruger en hjerte starter";
 }
+
+// Dark mode
+
+// const html = document.documentElement;
+// const toggleSwitch = document.querySelector("#theme-toggle");
+
+// function handleThemeChange(event) {
+//   const isDark = toggleSwitch.checked;
+//   html.classList.toggle("dark", isDark);
+//   localStorage.setItem("isDarkMode", isDark); // "true" / "false"
+// }
+
+// function getSavedTheme() {
+//   const isDark = localStorage.getItem("isDarkMode") === "true";
+//   html.classList.toggle("dark", isDark);
+//   toggleSwitch.checked = isDark;
+// }
+
+// getSavedTheme();
+
+// toggleSwitch?.addEventListener("change", handleThemeChange);
