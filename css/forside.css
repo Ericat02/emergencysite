@@ -6,7 +6,8 @@
 
 /* Overskrifternes design */
 .overskrift {
-  background-color: var(--color-card-bg-inverted);
+  background-color: var(--color-headline-bg);
+  color: var(--color-menu-bg);
   height: 2rem;
   text-align: center;
 }
@@ -37,7 +38,7 @@
 #side_links {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  background-color: var(--color-link-active);
+  background-color: #efe0e0;
   border-radius: 1rem;
   margin: 1rem;
 }
@@ -94,11 +95,8 @@
 }
 
 .knap-til-sider {
-  background-color: red;
+  background-color: var(--color-cta-knap);
   color: black;
-  border:
-    0.2rem solid,
-    black;
   border-radius: 2rem;
   gap: 2px;
 }
@@ -174,7 +172,7 @@ details {
 }
 
 summary {
-  background: red;
+  background: #a61b29;
   cursor: pointer;
   padding: 1rem;
 }
@@ -221,8 +219,8 @@ html {
 
 /* dark mode */
 
-/* html eller :root { */
-/* color-scheme: light dark;
+html /*eller :root*/ {
+  --color-scheme: light dark;
   --color-brand: light-dark(#5000ca, #bb86fc);
   --bg-primary: light-dark(#eee, #121212);
 }
@@ -247,7 +245,6 @@ html.dark {
 #theme-toggle::before {
   content: "";
   display: block;
-  padding: 3px;
   height: 100%;
   aspect-ratio: 1;
   background: gray content-box;
@@ -258,4 +255,4 @@ html.dark {
 #theme-toggle:checked::before {
   background-color: green;
   translate: calc(var(--w) - var(--h));
-} */
+}
