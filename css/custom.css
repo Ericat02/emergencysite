@@ -8,8 +8,8 @@
   /* orginal header farve #625e5c */
 
   /* Logotype */
-  --color-logotype-bg: #2a2828;
-  --color-text-logotype: #c1bfb8;
+  --color-logotype-bg: #d94b5c;
+  --color-text-logotype: #a61b29;
   --font-logotype-size: 1rem;
 
   /* Global menu */
@@ -67,6 +67,5 @@
   --color-info-bg: #cdccc4;
 
   /* CTA-kanpper */
-
   --color-cta-knap: #c61726;
 }

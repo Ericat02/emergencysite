@@ -1,12 +1,6 @@
-/* Logo */
-.logo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-h1 {
+/* h1 {
   font-size: 23px;
-}
+} */
 
 /* Overskrifternes design */
 .overskrift {
