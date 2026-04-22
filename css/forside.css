@@ -4,6 +4,10 @@
   grid-template-columns: 1fr 1fr;
 }
 
+h1 {
+  font-size: 23px;
+}
+
 /* Overskrifternes design */
 .overskrift {
   background-color: var(--color-headline-bg);
@@ -34,12 +38,12 @@
   border-radius: var(--border-radius-links);
   padding: 1rem;
 }
+/* artikel sektion */
 
 #side_links {
   display: grid;
   grid-template-columns: 1fr 2fr;
   background-color: #efe0e0;
-  border-radius: 1rem;
   margin: 1rem;
 }
 .front-page-text {
@@ -47,14 +51,14 @@
   gap: 0.3rem;
   grid-template-rows: auto auto 1fr;
   margin-top: 10px;
-  max-width: 50ch;
 }
+
+/* Sektion med breking news */
 
 #art-news-wrapper {
   display: grid;
   grid-template-columns: 5fr 2fr;
 }
-/* artikel sektion */
 
 .news_card1,
 .news_card2 {
@@ -70,14 +74,14 @@
   text-align: center;
 } */
 
-.breaking {
+/* .breaking {
   display: grid;
   grid-column: 1/ -1;
   background-color: #000;
   text-align: center;
   line-height: 3rem;
   margin-bottom: 1rem;
-}
+} */
 
 .news {
   background-color: var(--color-cta-card-bg-inverted);
@@ -97,8 +101,8 @@
 .knap-til-sider {
   background-color: var(--color-cta-knap);
   color: black;
-  border-radius: 2rem;
   gap: 2px;
+  max-width: 40ch;
 }
 
 .knap-til-sider::after {
