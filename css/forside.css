@@ -15,7 +15,6 @@
   grid-template-columns: 1fr 5fr;
   align-items: center;
   gap: 1rem;
-  margin: 2rem auto;
 }
 
 #top-section-wrapper {
