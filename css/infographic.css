@@ -16,6 +16,7 @@
   background-color: var(--color-headline-bg);
   color: var(--color-text-inverted);
   margin-bottom: 1rem;
+  font-family: "Hammersmith";
 }
 .info-text h3 {
   font-size: 0.8rem;

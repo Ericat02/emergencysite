@@ -1,20 +1,109 @@
-/* h1 {
-  font-size: 23px;
+#main-wrapper {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+}
+
+/* Front page artikler layout */
+#frontpage-articel article {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: #efe0e0;
+  margin: 1rem;
+  max-width: 90ch;
+  padding: 2rem 0 2rem 0;
+  p {
+    font-size: 1.1rem;
+  }
+  img {
+    padding: 18px;
+  }
+  h2 {
+    background-color: var(--color-headline-bg);
+    color: var(--color-text-inverted);
+    font-size: 1.3rem;
+    max-height: 2.5rem;
+    display: flex;
+    align-items: center;
+    font-family: Hammersmith;
+  }
+}
+
+.frontpage-text {
+  display: grid;
+  gap: 0.2rem;
+}
+
+/* knappernes udsene */
+.knap {
+  background-color: var(--color-cta-knap);
+  color: #fff;
+  font-size: 1rem;
+  gap: 2px;
+  max-width: 35ch;
+  max-height: 4ch;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.knap::after {
+  content: " →";
+  margin-left: 20px;
+}
+
+.frontpage_news {
+  display: grid;
+  background-color: #efe0e0;
+  margin: 2rem;
+  h4 {
+    margin: 3rem;
+  }
+}
+
+#news_headliner {
+  background-color: var(--color-headline-bg);
+  color: var(--color-text-inverted);
+  display: block;
+  text-align: center;
+  padding: 0.6rem;
+  font-family: Hammersmith;
+}
+
+/* .frontpage_news article {
+  background-color: #efe0e0;
+}
+
+.frontpage_news article:nth-of-type(2n) {
+  background-color: #ffc5c5;
 } */
 
+button {
+}
+
 /* Overskrifternes design */
-.overskrift {
+/* .overskrift {
   background-color: var(--color-headline-bg);
   color: var(--color-menu-bg);
   height: 2rem;
   text-align: center;
-}
+  font-family: "Hammersmith";
+  font-size: 25px;
+} */
 
+/* headeren */
 #top-section {
   display: grid;
   grid-template-columns: 1fr 5fr;
   align-items: center;
   gap: 1rem;
+  font-family: "RubikMonoOne";
+  p {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 24px;
+  }
 }
 
 #top-section-wrapper {
@@ -24,16 +113,9 @@
   }
 }
 
-#frontpage article {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  background-color: var(--color-info-bg);
-  border-radius: var(--border-radius-links);
-  padding: 1rem;
-}
 /* artikel sektion */
 
-#side_links {
+/* #side_links {
   display: grid;
   grid-template-columns: 1fr 2fr;
   background-color: #efe0e0;
@@ -44,19 +126,18 @@
   gap: 0.3rem;
   grid-template-rows: auto auto 1fr;
   margin-top: 10px;
-}
+} */
 
 /* Sektion med breking news */
 
-#art-news-wrapper {
+/* #art-news-wrapper {
   display: grid;
   grid-template-columns: 5fr 2fr;
 }
 
-.news_card1,
-.news_card2 {
-  /* border: 1rem solid black; */
-}
+#frontpage_news article {
+  background-color: #e3e0ef;
+} */
 
 /* .news article:first-child::before {
   content: "BREAKING NEWS";
@@ -76,16 +157,21 @@
   margin-bottom: 1rem;
 } */
 
-.news {
-  background-color: var(--color-cta-card-bg-inverted);
+/* .news {
   display: grid;
   margin: 1rem;
   gap: 2rem;
-}
+  .news_card2 {
+    background-color: #ffc5c5;
+  }
+  .news_card1 {
+    background-color: #efe0e0;
+  }
+} */
+
 /* knap design */
 .knap-til-sider,
 .news button {
-  border-radius: var(--border-radius-links);
   height: max-content;
   padding: 0.5rem 2rem;
   text-decoration: none;
@@ -98,14 +184,10 @@
   max-width: 40ch;
 }
 
-.knap-til-sider::after {
-  content: " →";
-  margin-left: 20px;
-}
-
 button {
-  margin-left: 6rem;
-  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 /* popover */
