@@ -52,6 +52,14 @@
   margin-left: 20px;
 }
 
+button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* News sektion */
 .frontpage_news {
   display: grid;
   background-color: #efe0e0;
@@ -69,27 +77,6 @@
   padding: 0.6rem;
   font-family: Hammersmith;
 }
-
-/* .frontpage_news article {
-  background-color: #efe0e0;
-}
-
-.frontpage_news article:nth-of-type(2n) {
-  background-color: #ffc5c5;
-} */
-
-button {
-}
-
-/* Overskrifternes design */
-/* .overskrift {
-  background-color: var(--color-headline-bg);
-  color: var(--color-menu-bg);
-  height: 2rem;
-  text-align: center;
-  font-family: "Hammersmith";
-  font-size: 25px;
-} */
 
 /* headeren */
 #top-section {
@@ -111,83 +98,6 @@ button {
   p {
     color: var(--color-text-inverted);
   }
-}
-
-/* artikel sektion */
-
-/* #side_links {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  background-color: #efe0e0;
-  margin: 1rem;
-}
-.front-page-text {
-  display: grid;
-  gap: 0.3rem;
-  grid-template-rows: auto auto 1fr;
-  margin-top: 10px;
-} */
-
-/* Sektion med breking news */
-
-/* #art-news-wrapper {
-  display: grid;
-  grid-template-columns: 5fr 2fr;
-}
-
-#frontpage_news article {
-  background-color: #e3e0ef;
-} */
-
-/* .news article:first-child::before {
-  content: "BREAKING NEWS";
-  background-color: black;
-  padding: 0.5rem 0 0.3rem 0;
-  color: var(--color-text-inverted);
-  margin-top: 0.4rem;
-  text-align: center;
-} */
-
-/* .breaking {
-  display: grid;
-  grid-column: 1/ -1;
-  background-color: #000;
-  text-align: center;
-  line-height: 3rem;
-  margin-bottom: 1rem;
-} */
-
-/* .news {
-  display: grid;
-  margin: 1rem;
-  gap: 2rem;
-  .news_card2 {
-    background-color: #ffc5c5;
-  }
-  .news_card1 {
-    background-color: #efe0e0;
-  }
-} */
-
-/* knap design */
-.knap-til-sider,
-.news button {
-  height: max-content;
-  padding: 0.5rem 2rem;
-  text-decoration: none;
-}
-
-.knap-til-sider {
-  background-color: var(--color-cta-knap);
-  color: black;
-  gap: 2px;
-  max-width: 40ch;
-}
-
-button {
-  display: flex;
-  align-items: center;
-  text-align: center;
 }
 
 /* popover */
@@ -245,13 +155,19 @@ button {
 
 /* accordion design */
 
+.accordin_section {
+  padding: 25px;
+  max-width: 95ch;
+  margin-left: 1rem;
+}
+
 details {
   outline: 2px solid #000;
   margin-bottom: 10px;
 }
 
 summary {
-  background: #a61b29;
+  background: #ffc5c5;
   cursor: pointer;
   padding: 1rem;
 }
