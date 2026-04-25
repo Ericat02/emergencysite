@@ -103,7 +103,7 @@ nav a {
 header nav li a {
   margin: 1.5rem;
   background-color: var(--color-cta-knap);
-  color: var(--color-text);
+  color: var(--color-text-inverted);
   font-size: var(--followup-text-size);
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius-links);
