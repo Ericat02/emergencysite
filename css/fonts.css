@@ -1,7 +1,18 @@
 @font-face {
   font-family: "Rubik";
-  src: url("../fonts/Rubik-VariableFont_wght.woff2") format("woff2-variations"),
+  src:
+    url("../fonts/Rubik-VariableFont_wght.woff2") format("woff2-variations"),
     url("/fonts/Rubik-Regular.woff") format("woff");
   font-weight: 200 700;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "RubikMonoOne";
+  src: url("../fonts/RubikMonoOne-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Hammersmith";
+  src: url(../fonts/HammersmithOne-Regular.woff2);
 }

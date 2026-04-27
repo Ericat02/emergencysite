@@ -8,8 +8,8 @@
   /* orginal header farve #625e5c */
 
   /* Logotype */
-  --color-logotype-bg: #2a2828;
-  --color-text-logotype: #c1bfb8;
+  --color-logotype-bg: #d94b5c;
+  --color-text-logotype: #a61b29;
   --font-logotype-size: 1rem;
 
   /* Global menu */
@@ -32,7 +32,7 @@
   --font-sub1-size: 1rem;
 
   /* Headlines (color) */
-  --color-headline-bg: #a61b29;
+  --color-headline-bg: #000;
   /* original farve #4b4545 */
 
   /* Tekst */
@@ -49,8 +49,10 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #e3e1d8;
-  --color-card-bg-inverted: #4d4e4f;
+  --color-card-bg: #ff9191;
+  /* orginal farve e3e1d8 */
+  --color-card-bg-inverted: #d0e9ff;
+  /* orginal farve #4d4e4f */
   --color-cta-card-bg: #847f7e;
   --color-cta-card-bg-inverted: #c0bfb9;
 
@@ -63,4 +65,7 @@
 
   /* Infographics background colors*/
   --color-info-bg: #cdccc4;
+
+  /* CTA-kanpper */
+  --color-cta-knap: #c61726;
 }

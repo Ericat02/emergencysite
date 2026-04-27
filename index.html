@@ -19,7 +19,7 @@
   <header>
     <nav>
       <div id="logotype-wrapper">
-        <a class="logo" href="index.html"><img src="logo/logo_resultat.svg" alt="">HjerteHjælp</a>
+        <a href="index.html"><img src="logo/logo_resultat.svg" alt="">HJERTE HJÆLP</a>
       </div>
       <ul class="menu">
         <li><a class="menuItem" href="instruction.html">Instruktion</a></li>
@@ -35,133 +35,92 @@
 
   <main>
     <!-- header sektion med logo -->
-    <article id="frontpage">
-      <div id="top-section-wrapper">
-        <section id="top-section">
-          <img src="logo/logo_resultat.svg" alt="">
 
-          <div>
-            <h1>HJERTE HJÆLP </h1>
-            <p>Vær med til at rede liv</p>
-          </div>
-        </section>
-      </div>
-    </article>
-
-    <div id="art-news-wrapper">
-
-      <!-- sektion med artikel -->
-      <article>
-        <div id="side_links">
-          <div>
-            <img src="img/Skærmbillede 2026-04-16 kl. 14.21.23_resultat.webp" alt="">
-          </div>
-          <div class="front-page-text">
-            <h2 class="overskrift">INSTRUKTION</h2>
-            <p>Vid hvordan. du </p>
-            <a class="knap-til-sider" href="instruction.html">Se mere </a>
-
-          </div>
+    <div id="top-section-wrapper">
+      <section id="top-section">
+        <img src="logo/logo_resultat.svg" alt="Logo af hjerte, som er knækket, hen over hjertet er der et plaster">
+        <div>
+          <h1>HJERTE HJÆLP </h1>
+          <p>Vær med til at rede liv</p>
         </div>
+      </section>
+    </div>
 
-        <div id="side_links">
-          <div>
-            <img src="img/hjerte.webp" alt="">
-          </div>
-          <div class="front-page-text">
-            <h2 class="overskrift">TILMELD </h2>
-            <p> Vil du være hjerteløber</p>
-            <a class="knap-til-sider" href="register.html">Tilmeld dig her</a>
-          </div>
-        </div>
 
-        <div id="side_links">
-          <div>
-            <img src="img/førstehjælpskasse.webp" alt="">
+    <!--dark mode -->
+    <label>
+      <span class="visually-hidden"></span>
+      <input id="theme-toggle" type="checkbox">
+    </label>
+
+    <!-- Sektion med artikler -->
+    <div id="main-wrapper">
+      <section id="frontpage-articel">
+        <article>
+          <img src="img/inografik 100 x 200.webp" alt="">
+          <div class="frontpage-text">
+            <h2>INFROGRAFIK</h2>
+            <p>Skulle du noglesinde få brug for at udøvre HRL, kan du her læse step by step hvordan</p>
+            <a class="knap" href="instruction.html">Se mere</a>
           </div>
-          <div class="front-page-text">
-            <h2 class="overskrift">FØRSTEHJÆLPSKASSE</h2>
-            <p>Står du og mangler en førstehjælpskasses</p>
-            <a class="knap-til-sider" target="_blank"
-              href="https://www.falck.dk/foerstehjaelp/produkter/foerstehjaelpskasse/">Køb her
+        </article>
+        <article>
+          <img src="img/Hjerteløber.webp" alt="">
+          <div class="frontpage-text">
+            <h2>VIL DU VÆRE HJERTELØBER?</h2>
+            <p>Vil du være med til at gøre en forskel, så tilmeld dig her og bliv en del af hjerteløber teamet</p>
+            <a class="knap" href="register.html">Tilmeld her</a>
+          </div>
+        </article>
+        <article>
+          <img src="img/Førstehjælpskasse.webp" alt="">
+          <div class="frontpage-text">
+            <h2>KØB EN FØRSTEHJÆLPSKASSE</h2>
+            <p>Står du og mangler en førstehjælpskasse, kan du hos falck købe en genopfyldelig en</p>
+            <a class="knap" target="_blank" href="https://www.falck.dk/foerstehjaelp/produkter/foerstehjaelpskasse/">Køb
+              her
             </a>
           </div>
-        </div>
+        </article>
+      </section>
 
 
-        <!-- sektion med accordin -->
+      <!-- Sektion med news -->
+      <!-- News 1 -->
+      <section class="frontpage_news">
 
-        <section class="accordin_section">
-          <h2>FAQ</h2>
-
-          <details open name="accordion">
-            <summary>1</summary>
-            <div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit totam molestias laborum hic, neque
-                dicta
-                assumenda distinctio in, quia cumque qui? Molestiae quae quod sunt impedit? Hic a odit rem!</p>
-            </div>
-          </details>
-
-          <details name="accordion">
-            <summary>2</summary>
-            <div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit totam molestias laborum hic, neque
-                dicta
-                assumenda distinctio in, quia cumque qui? Molestiae quae quod sunt impedit? Hic a odit rem!</p>
-            </div>
-          </details>
-
-          <details name="accordion">
-            <summary>3</summary>
-            <div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit totam molestias laborum hic, neque
-                dicta
-                assumenda distinctio in, quia cumque qui? Molestiae quae quod sunt impedit? Hic a odit rem!</p>
-            </div>
-          </details>
-        </section>
-      </article>
-
-
-
-
-      <!-- sektion med breaking news  -->
-      <!-- artikel 1 -->
-      <section class="news">
-        <h2 class="overskrift">BREAKING NEWS</h2>
-        <article class="news_card1">
-
-
-          <div>
-            <h3>Hvor mange overlever et hjertestop – og hvilken rolle spiller hjertemassage?</h3>
-            <br><img src="img/Firefly_hjertemassage_resultat.webp" alt="">
+        <article>
+          <div id="news_headliner">
+            <h3>BREAKING NEWS</h3>
           </div>
           <div>
-            <p>Hjertestop er en af de mest alvorlige akutte tilstande, hvor hvert sekund tæller. Når hjertet stopper med
-              at
-              pumpe blod rundt i kroppen, mister hjernen hurtigt ilt, og uden hurtig hjælp kan det få fatale
-              konsekvenser.
-              Heldigvis kan hurtig indgriben fra omgivelserne – især hjertemassage – gøre en afgørende forskel for
-              overlevelsen.</p>
+            <h2>Hvor mange oplever et hjertestop
+              <br> – og hvilken rolle spiller hjertemassage?
+            </h2>
+            <img src="img/Firefly_resultat.webp" alt="">
+            <p>Hjertestop er en af de mest alvorlige akutte tilstande, hvor hvert sekund tæller. Når hjertet stopper
+              med at pumpe blod ....</p>
             <button popovertarget="news_popover1">Læs mere</button>
           </div>
           <div id="news_popover1" popover>
             <button popovertarget="news_popover1">Luk</button>
-            <h3>Hvor mange overlever et hjertestop – og hvilken rolle spiller hjertemassage?</h3>
-            <br><img src="img/Firefly_hjertemassage_resultat.webp" alt="">
-            <p><br>
-              Hjertestop er en af de mest alvorlige akutte tilstande, hvor hvert sekund tæller. Når hjertet stopper med
-              at
-              pumpe blod rundt i kroppen, mister hjernen hurtigt ilt, og uden hurtig hjælp kan det få fatale
+            <h4>Hvor mange overlever et hjertestop – og hvilken rolle spiller hjertemassage?</h4>
+
+            <p><br>Hjertestop er en af de mest alvorlige akutte tilstande, hvor hvert sekund tæller. Når hjertet
+              stopper
+              med at pumpe blod rundt i kroppen, mister hjernen hurtigt ilt, og uden hurtig hjælp kan det få fatale
               konsekvenser.
               Heldigvis kan hurtig indgriben fra omgivelserne – især hjertemassage – gøre en afgørende forskel for
-              overlevelsen. </p>
+              overlevelsen.</p>
+
+            <br><img src="img/Firefly_hjertemassage_resultat.webp" alt="">
 
             <p>
             <h3><br>Overlevelse ved hjertestop</h3>
-            I Danmark rammes omkring 5.000 personer hvert år af hjertestop uden for hospital. Overlevelsen er dog steget
-            markant de seneste årtier. I dag overlever cirka 1 ud af 4 personer et hjertestop uden for hospital, hvilket
+            I Danmark rammes omkring 5.000 personer hvert år af hjertestop uden for hospital. Overlevelsen er dog
+            steget
+            markant de seneste årtier. I dag overlever cirka 1 ud af 4 personer et hjertestop uden for hospital,
+            hvilket
             svarer til omkring 25 %.
             Denne udvikling skyldes blandt andet øget viden i befolkningen, bedre adgang til hjertestartere og ikke
             mindst, at flere træder til og giver førstehjælp, inden ambulancen når frem.
@@ -193,41 +152,33 @@
             <h3><br>Flere kan gøre en forskel</h3>
             I dag modtager flere danskere førstehjælpsundervisning, og det har haft en direkte effekt på overlevelsen.
             Alligevel er der stadig situationer, hvor der ikke bliver handlet hurtigt nok.
-            At kunne give hjertemassage kræver ikke avanceret udstyr – kun viljen til at handle. Selv en simpel indsats
+            At kunne give hjertemassage kræver ikke avanceret udstyr – kun viljen til at handle. Selv en simpel
+            indsats
             kan være forskellen mellem liv og død.
             </p>
-            Konklusion
+            <h3><br>Konklusion</h3>
             Hvert år overlever flere hundrede danskere et hjertestop, og en stor del af æren tilhører de personer, der
             træder til og yder hjertemassage. Hurtig førstehjælp er en af de vigtigste faktorer for overlevelse, og jo
             flere der lærer det, desto flere liv kan reddes.
           </div>
         </article>
 
+        <!-- News 2 -->
+        <article>
+          <h2>Ambulanceredere - hvert sekund tæller</h2>
+          <img src="img/Firefly_ambulance_resultat.webp" alt="">
+          <p>Ambulancereddere er ofte de første på stedet, når en ulykke sker, eller .... </p>
+          <button popovertarget="news_popover2">Læs mere</button>
 
-        <!-- artikel 2 -->
-        <article class="news_card2">
-          <div>
-            <h3>Ambulancereddere – når hvert sekund tæller</h3>
-            <br><img src="img/Firefly_ambulance_resultat.webp" alt="">
-          </div>
-          <div>
-            <p>Ambulancereddere er ofte de første på stedet, når en ulykke sker, eller en person bliver alvorligt
-              syg.
-              De
-              spiller en afgørende rolle i at redde liv og skabe tryghed i akutte situationer.</p>
-
-            <button popovertarget="news_popover2">Læs mere</button>
-
-          </div>
           <div id="news_popover2" popover>
             <button popovertarget="news_popover2">Luk</button>
             <h3>Ambulancereddere – når hvert sekund tæller</h3>
-            <br><img src="img/Firefly_ambulance_resultat.webp" alt="">
             <p><br>Ambulancereddere er ofte de første på stedet, når en ulykke sker, eller en person bliver alvorligt
               syg.
               De
-              spiller en afgørende rolle i at redde liv og skabe tryghed i akutte situationer.
+              spiller en afgørende rolle i at redde liv og skabe tryghed i akutte situationer. </p>
 
+            <br><img src="img/Firefly_ambulance_resultat.webp" alt="">
 
             <h3><br>Hvad laver en ambulanceredder?</h3>
             Ambulancereddere er specialuddannede til at yde akut hjælp. Deres vigtigste opgaver er at:
@@ -246,13 +197,54 @@
             Arbejdet som ambulanceredder kræver både faglighed, overblik og empati. De møder mennesker i kritiske
             situationer og gør en forskel, når det gælder allermest.
 
-            Konklusion
+            <h3><br>Konklusion </h3>
             Ambulancereddere er en uundværlig del af vores samfund. De står klar døgnet rundt – og deres indsats
             redder liv hver eneste dag.
-            </p>
+
           </div>
         </article>
       </section>
+
+      <!-- sektion med accordin -->
+      <section class="accordin_section">
+        <h2>FAQ</h2>
+
+        <details open name="accordion">
+          <summary>Kan et hjertestop forbygges?</summary>
+          <div>
+            <p>I nogle tilfælde kan det ja. En sundere livstil, behanling af hjertesygdommeog reglmæssige lægetjekt, kan
+              være med til at reducere risikoen.</p>
+          </div>
+        </details>
+
+        <details name="accordion">
+          <summary>Hvordan kan jeg forberede mig bedst?</summary>
+          <div>
+            <p>Vær opmærksom på symtomerne, Find ud af hvor den nærsmeste hjertestarter er. og lær første hjælp og HRL,
+              tag eventuel et kursus ved</p>
+            <a target="_blank"
+              href="https://hjerteforeningen.dk/hjerteredder/?gad_source=1&gad_campaignid=20982858416&gbraid=0AAAAAC_mevl0tC2Qstm8vro8hdH8xGbED&gclid=CjwKCAjwspPOBhB9EiwATFbi5NkdW8gqr9rHbF2NXBDpmL_otgfhK9p67R4rWpFyk8fs9thr4u0hAhoCF84QAvD_BwE">Klik
+              på linket</a>
+          </div>
+        </details>
+
+        <details name="accordion">
+          <summary>Hvad er symtomerne?</summary>
+          <div>
+            <p>De typsike tegn er:</p>
+            <ul>
+              <li> * Personen falder om</li>
+              <li> * Der er ikke normal verjtrækning</li>
+              <li> * Ingen puls</li>
+              <p>Dette sker ofte ud af det blå</p>
+            </ul>
+          </div>
+        </details>
+      </section>
+      </article>
+
+    </div>
+
   </main>
 
   <footer>
@@ -277,6 +269,8 @@
       </ul>
     </nav>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,21 +1,96 @@
-/* Logo */
-.logo {
+#main-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 5fr 2fr;
 }
 
-/* Overskrifternes design */
-.overskrift {
-  background-color: var(--color-card-bg-inverted);
-  height: 2rem;
+/* Front page artikler layout */
+#frontpage-articel article {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: #efe0e0;
+  margin: 1rem;
+  max-width: 90ch;
+  padding: 2rem 0 2rem 0;
+  p {
+    font-size: 1.1rem;
+  }
+  img {
+    padding: 18px;
+  }
+  h2 {
+    background-color: var(--color-headline-bg);
+    color: var(--color-text-inverted);
+    font-size: 1.3rem;
+    max-height: 2.5rem;
+    display: flex;
+    align-items: center;
+    font-family: Hammersmith;
+  }
 }
 
+.frontpage-text {
+  display: grid;
+  gap: 0.2rem;
+}
+
+/* knappernes udsene */
+.knap {
+  background-color: var(--color-cta-knap);
+  color: #fff;
+  font-size: 1rem;
+  gap: 2px;
+  max-width: 35ch;
+  max-height: 4ch;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.knap::after {
+  content: " →";
+  margin-left: 20px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* News sektion */
+.frontpage_news {
+  display: grid;
+  background-color: #efe0e0;
+  margin: 2rem;
+  h4 {
+    margin: 3rem;
+  }
+}
+
+#news_headliner {
+  background-color: var(--color-headline-bg);
+  color: var(--color-text-inverted);
+  display: block;
+  text-align: center;
+  padding: 0.6rem;
+  font-family: Hammersmith;
+}
+
+/* headeren */
 #top-section {
   display: grid;
   grid-template-columns: 1fr 5fr;
   align-items: center;
   gap: 1rem;
-  margin: 2rem auto;
+  font-family: "RubikMonoOne";
+  p {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 24px;
+  }
 }
 
 #top-section-wrapper {
@@ -25,100 +100,9 @@
   }
 }
 
-#frontpage article {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  background-color: var(--color-info-bg);
-  border-radius: var(--border-radius-links);
-  padding: 1rem;
-}
-
-#side_links {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  background-color: var(--color-link-active);
-  border-radius: 1rem;
-  margin: 1rem;
-}
-.front-page-text {
-  display: grid;
-  gap: 0.3rem;
-  grid-template-rows: auto auto 1fr;
-  margin-top: 10px;
-  max-width: 50ch;
-}
-
-#art-news-wrapper {
-  display: grid;
-  grid-template-columns: 5fr 2fr;
-}
-/* artikel sektion */
-
-.news_card1,
-.news_card2 {
-  /* border: 1rem solid black; */
-}
-
-/* .news article:first-child::before {
-  content: "BREAKING NEWS";
-  background-color: black;
-  padding: 0.5rem 0 0.3rem 0;
-  color: var(--color-text-inverted);
-  margin-top: 0.4rem;
-  text-align: center;
-} */
-
-.breaking {
-  display: grid;
-  grid-column: 1/ -1;
-  background-color: #000;
-  text-align: center;
-  line-height: 3rem;
-  margin-bottom: 1rem;
-}
-
-.news {
-  background-color: var(--color-cta-card-bg-inverted);
-  display: grid;
-  margin: 1rem;
-  gap: 2rem;
-  p {
-    padding: 1rem;
-  }
-}
-/* knap design */
-.knap-til-sider,
-.news button {
-  border-radius: var(--border-radius-links);
-  height: max-content;
-  padding: 0.5rem 2rem;
-  text-decoration: none;
-}
-
-.knap-til-sider {
-  background-color: red;
-  color: black;
-  border:
-    0.2rem solid,
-    black;
-  border-radius: 2rem;
-  gap: 2px;
-}
-
-.knap-til-sider::after {
-  content: " →";
-  margin-left: 20px;
-}
-
-button {
-  margin-left: 6rem;
-  border-radius: 2rem;
-}
-
 /* popover */
 [popover] {
   padding: 1rem;
-
   max-height: 90vh;
   max-width: 90vw;
   width: 50ch;
@@ -170,12 +154,20 @@ button {
 }
 
 /* accordion design */
+
+.accordin_section {
+  padding: 25px;
+  max-width: 95ch;
+  margin-left: 1rem;
+}
+
 details {
   outline: 2px solid #000;
+  margin-bottom: 10px;
 }
 
 summary {
-  background: red;
+  background: #ffc5c5;
   cursor: pointer;
   padding: 1rem;
 }
@@ -218,4 +210,44 @@ html {
 
 [open]::details-content {
   height: auto;
+}
+
+/* dark mode */
+
+html /*eller :root*/ {
+  --color-scheme: light dark;
+  --color-brand: light-dark(#5000ca, #bb86fc);
+  --bg-primary: light-dark(#eee, #121212);
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+#theme-toggle {
+  --h: 2rem;
+  --w: 3rem;
+  font: inherit;
+  appearance: none;
+  background: gainsboro;
+  height: var(--h);
+  width: var(--w);
+  border: 1px solid #000;
+  cursor: pointer;
+  border-radius: 9999px;
+}
+
+#theme-toggle::before {
+  content: "";
+  display: block;
+  height: 100%;
+  aspect-ratio: 1;
+  background: gray content-box;
+  border-radius: inherit;
+  transition: 0.3s;
+}
+
+#theme-toggle:checked::before {
+  background-color: green;
+  translate: calc(var(--w) - var(--h));
 }
